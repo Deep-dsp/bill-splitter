@@ -26,8 +26,8 @@ const TipPercentage = ({setTip, customtip, setCustomtip, click, setClick}) => {
 
             <div className='col-6 col-lg-4'>
                <div className='custom-tip-block'>
-                  <label htmlFor="Custom Tip Amount" className='font-style mb-2'>Custom Tip Amount</label>
-                  <input onChange={(e) => {setCustomtip(e.target.value); setClick(0);}} value={value} className="font-style" placeholder="Custom" type="number" name="Custom Tip Amount" aria-label="Custom Tip Amount"/>
+                  <label htmlFor="custom-tip-amount" className='font-style mb-2'>Custom Tip Amount</label>
+                  <input id="custom-tip-amount" onChange={(e) => {setCustomtip(e.target.value); setClick(0);}} value={value} className="font-style" placeholder="Custom" type="number" name="Custom Tip Amount" aria-label="Custom Tip Amount"/>
                </div>
             </div>
 
