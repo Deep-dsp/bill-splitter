@@ -19,14 +19,14 @@ const InputBlock = ({ setAmount, amount, tipAmount, setTipAmount, person, setPer
 
   return (
     <>
-      <div className="bill-amount-input" role="Amount Input Block">
+      <div className="bill-amount-input" role="dialog">
         <label htmlFor="bill-bmount" className="font-style mb-2">
           Bill
         </label>
         <div className="input bill-amount-input d-flex align-items-center">
           <img src="/images/icon-dollar.svg" alt="Dollar Icon" aria-label="Dollar Icon" />
           <input
-            if="bill-bmount"
+            id="bill-bmount"
             className="font-style pe-1"
             type="number"
             placeholder={amount}
@@ -34,20 +34,21 @@ const InputBlock = ({ setAmount, amount, tipAmount, setTipAmount, person, setPer
             name="Bill Amount"
             aria-label="Bill Amount"
             value={inputEmpty}
+            role="number"
           />
         </div>
       </div>
 
-      <TipPercentage setTip={setTip} customtip={customtip} setCustomtip={setCustomtip} click={click} setClick={setClick}/>
+      <TipPercentage setTip={setTip} customtip={customtip} setCustomtip={setCustomtip} click={click} setClick={setClick} amount={amount}/>
 
-      <div className="person-input" role="Number Of People Block">
-        <label htmlFor="nNumber-of-people" className="font-style mb-2">
+      <div className="person-input" role="dialog">
+        <label htmlFor="Number-of-people" className="font-style mb-2">
           Number of People
         </label>
         <div className="input bill-amount-input d-flex align-items-center">
           <img src="/images/icon-person.svg" alt="Icon Person" aria-label="Persom Icon" />
           <input
-            id="nNumber-of-people"
+            id="Number-of-people"
             className="font-style pe-1"
             placeholder={person}
             onChange={(e) => setPerson(e.target.value)}
@@ -56,6 +57,7 @@ const InputBlock = ({ setAmount, amount, tipAmount, setTipAmount, person, setPer
             aria-label="Number Of People"
             min="1"
             value={onePerson}
+            role="number"
           />
         </div>
       </div>

@@ -22,13 +22,14 @@ function App() {
 
 
   return (
-    <div className="App d-flex align-items-center">
+    <div className="App d-flex align-items-center" role="main">
       <div className="container mx-auto">
-        <div className="logo d-flex justify-content-center" role="Splitter Logo">
+        <div className="logo d-flex justify-content-center" role="document">
           <img
             src="images/logo.svg"
             aria-label="Splitter Logo"
             title="Splitter Logo"
+            alt="Splitter Logo"
           />
         </div>
         <div className="row">
@@ -41,7 +42,7 @@ function App() {
               click={click} setClick={setClick} rest={rest}
             />
           </div>
-          <div className="col-lg-6 ps-3 ps-xl-5 mt-5 mt-lg-0" role="Display splitted amount container">
+          <div className="col-lg-6 ps-3 ps-xl-5 mt-5 mt-lg-0">
             <DisplayBlock amount={amount} tipAmount={tipAmount} person={person} customtip={customtip} click={click} reset={reset} setRest={setRest}/>
           </div>
         </div>
