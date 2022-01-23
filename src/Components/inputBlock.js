@@ -19,12 +19,12 @@ const InputBlock = ({ setAmount, amount, tipAmount, setTipAmount, person, setPer
 
   return (
     <>
-      <div className="bill-amount-input">
+      <div className="bill-amount-input" role="Amount Input Block">
         <label htmlFor="bill-bmount" className="font-style mb-2">
           Bill
         </label>
         <div className="input bill-amount-input d-flex align-items-center">
-          <img src="/images/icon-dollar.svg" aria-label="Dollar Icon" />
+          <img src="/images/icon-dollar.svg" alt="Dollar Icon" aria-label="Dollar Icon" />
           <input
             if="bill-bmount"
             className="font-style pe-1"
@@ -40,12 +40,12 @@ const InputBlock = ({ setAmount, amount, tipAmount, setTipAmount, person, setPer
 
       <TipPercentage setTip={setTip} customtip={customtip} setCustomtip={setCustomtip} click={click} setClick={setClick}/>
 
-      <div className="person-input">
+      <div className="person-input" role="Number Of People Block">
         <label htmlFor="nNumber-of-people" className="font-style mb-2">
           Number of People
         </label>
         <div className="input bill-amount-input d-flex align-items-center">
-          <img src="/images/icon-person.svg" aria-label="Persom Icon" />
+          <img src="/images/icon-person.svg" alt="Icon Person" aria-label="Persom Icon" />
           <input
             id="nNumber-of-people"
             className="font-style pe-1"

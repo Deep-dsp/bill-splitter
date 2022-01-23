@@ -51,14 +51,16 @@ label, .select-tip-title{
          -ms-border-radius: 5px;
          -o-border-radius: 5px;
          min-height: 48px;
+         padding: 1rem 0;
+         color: $white;
 
          &:hover,&:focus{
             cursor: pointer;
             background: $strong-cyan;
-
-            p{
-               color: $dark-cyan;
-            }
+            color: $dark-cyan;
+            // p{
+            //    color: $dark-cyan;
+            // }
          }
       }
 
